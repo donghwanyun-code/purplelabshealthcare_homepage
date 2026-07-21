@@ -77,7 +77,7 @@ button{ font-family: inherit; cursor:pointer; }
   color: var(--color-black);
 }
 .logo img{
-  height: 60px;
+  height: 32px;
   width: auto;
   display: block;
 }
