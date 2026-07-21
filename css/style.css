@@ -7,6 +7,7 @@
 
 :root{
   --color-black: #17151a;
+  --color-purple: #713792;
   --color-text: #2b2830;
   --color-text-light: #6f6b74;
   --color-white: #ffffff;
@@ -110,7 +111,7 @@ button{ font-family: inherit; cursor:pointer; }
   white-space: nowrap;
 }
 .btn-primary{ background: var(--color-black); color: var(--color-white); }
-.btn-primary:hover{ background: #333; }
+.btn-primary:hover{ background: var(--color-purple); }
 .btn-outline{ background: transparent; border-color: var(--color-border); color: var(--color-text); }
 .btn-outline:hover{ border-color: var(--color-black); color: var(--color-black); }
 .btn-lang{ font-size: 13px; font-weight: 500; color: var(--color-text); padding: 0; display:flex; align-items:center; gap:4px; }
