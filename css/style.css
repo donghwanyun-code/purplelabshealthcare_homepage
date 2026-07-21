@@ -462,7 +462,7 @@ button{ font-family: inherit; cursor:pointer; }
 .gallery-row{ display:grid; gap:14px; margin-bottom:22px; }
 .gallery-row.cols-3{ grid-template-columns: repeat(3,1fr); }
 .gallery-row.cols-5{ grid-template-columns: repeat(5,1fr); }
-.gallery-row img{ width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:4px; }
+.gallery-row img{ width:100%; aspect-ratio: 210/297; object-fit:cover; border-radius:4px; }
 .gallery-row.cols-3 img{ aspect-ratio: 210/297; }
 .gallery-nav{ display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:40px; }
 .gallery-nav button{
