@@ -226,7 +226,7 @@ button{ font-family: inherit; cursor:pointer; }
 }
 .founder-card img{ border-radius: var(--radius-md); aspect-ratio: 1/1; object-fit:cover; }
 .founder-card h3{ margin:0 0 4px; font-size:20px; font-weight:800; }
-.founder-role{ color: var(--color-pink-dark); font-weight:700; font-size:14px; margin-bottom:12px; display:block;}
+.founder-role{ color: var(--color-purple); font-weight:700; font-size:14px; margin-bottom:12px; display:block;}
 .founder-card p{ color: var(--color-text-light); font-size:14.5px; }
 .founder-quote{
   margin-top:14px; padding-top:14px; border-top:1px dashed var(--color-border);
