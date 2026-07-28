@@ -474,7 +474,7 @@ button{ font-family: inherit; cursor:pointer; }
 /* brand intro (brand.html) */
 .brand-intro-grid{ display:grid; grid-template-columns: repeat(2,1fr); gap:60px; }
 .brand-intro-item .tag{ font-size:13px; font-weight:700; color:var(--color-text-light); letter-spacing:.04em; margin-bottom:14px; display:block; }
-.brand-intro-item h3{ font-size:18px; font-weight:800; color:var(--color-black); margin:0 0 14px; line-height:1.5; }
+.brand-intro-item h3{ font-size:20px; font-weight:800; color:var(--color-black); margin:0 0 14px; line-height:1.5; }
 .brand-intro-item p{ font-size:14px; color:var(--color-text-light); line-height:1.85; margin:0; }
 
 /* core values image cards */
