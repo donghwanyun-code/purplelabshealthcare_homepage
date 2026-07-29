@@ -15,6 +15,34 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+// 화살표 이동
+(function(){
+  const track = document.getElementById('contentsTrack');
+  if(!track) return;
+  const prevBtn = document.querySelector('.contents-prev');
+  const nextBtn = document.querySelector('.contents-next');
+
+  function scrollByItem(dir){
+    const item = track.querySelector('.contents-item');
+    if(!item) return;
+    const gap = parseFloat(getComputedStyle(track).gap) || 0;
+    const itemWidth = item.getBoundingClientRect().width + gap;
+    track.scrollBy({ left: dir * itemWidth, behavior: 'smooth' });
+  }
+
+  function updateArrows(){
+    const maxScroll = track.scrollWidth - track.clientWidth - 1;
+    prevBtn.disabled = track.scrollLeft <= 0;
+    nextBtn.disabled = track.scrollLeft >= maxScroll;
+  }
+
+  prevBtn.addEventListener('click', () => scrollByItem(-1));
+  nextBtn.addEventListener('click', () => scrollByItem(1));
+  track.addEventListener('scroll', updateArrows);
+  window.addEventListener('resize', updateArrows);
+  updateArrows();
+})();
+
   // FAQ 아코디언
   document.querySelectorAll('.faq-item').forEach(function (item) {
     var question = item.querySelector('.faq-question');
