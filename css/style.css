@@ -335,58 +335,33 @@ button{ font-family: inherit; cursor:pointer; }
 
 .brand-plain .btn-linkedin:hover{ opacity:.85; }
 
-.partners{
-  display:flex;
-  flex-direction:column;
-  gap:64px;
-  padding: 60px 40px;
-}
-
-.partner-group{
-  display:flex;
-  flex-direction:column;
-  gap:32px;
-}
-
+/* 유통 파트너 로고 그리드 (company.html) */
+.partner-group{ margin-bottom:56px; }
+.partner-group:last-child{ margin-bottom:0; }
 .partner-region{
-  font-size:20px;
-  font-weight:800;
-  color: var(--color-navy, #2b3a67);
-  letter-spacing:0.5px;
-  margin:0;
+  font-size:14px; font-weight:800; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--color-text-light); margin:0 0 28px;
 }
-
-.partner-grid{
-  display:grid;
-  grid-template-columns: repeat(6, 1fr);
-  row-gap:56px;
-  column-gap:24px;
-  align-items:center;
-}
-
+.partner-grid{ display:grid; grid-template-columns: repeat(5,1fr); gap:20px; }
 .partner-logo{
-  display:flex;
-  align-items:center;
-  justify-content:flex-start; /* 왼쪽 정렬. 가운데 정렬하려면 center */
-  height:48px;
+  display:flex; align-items:center; justify-content:center;
+  height:88px; padding:16px;
+  border:1px solid var(--color-border); border-radius: var(--radius-sm);
+  background:#fff;
 }
-
 .partner-logo img{
-  max-width:100%;
-  max-height:100%;
-  width:auto;
-  height:auto;
-  object-fit:contain;
-
-  /* 스크린샷처럼 흑백 톤으로 통일하고 싶을 때 */
-  filter: grayscale(100%);
-  opacity:0.55;
-  transition: opacity 0.2s ease, filter 0.2s ease;
+  max-width:100%; max-height:100%; object-fit:contain;
+  filter:grayscale(100%); opacity:.7; transition: var(--transition);
 }
+.partner-logo:hover img{ filter:none; opacity:1; }
 
-.partner-logo img:hover{
-  filter: grayscale(0%);
-  opacity:1;
+@media (max-width: 960px){
+  .partner-grid{ grid-template-columns: repeat(4,1fr); }
+}
+@media (max-width: 720px){
+  .partner-grid{ grid-template-columns: repeat(3,1fr); gap:12px; }
+  .partner-logo{ height:68px; padding:12px; }
+  .partner-group{ margin-bottom:40px; }
 }
 
 /* ---------- 반응형 ---------- */
