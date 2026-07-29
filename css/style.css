@@ -235,8 +235,8 @@ button{ font-family: inherit; cursor:pointer; }
 
 /* ---------- Founders (plain, image-left / text-right row layout) ---------- */
 .founder-plain-grid{ display:flex; flex-direction:column; gap:72px; }
-.founder-plain{ display:grid; grid-template-columns: 600px 1fr; gap:64px; align-items:start; }
-.founder-plain img{ width:100%; aspect-ratio: 3/3.4; object-fit:cover; border-radius: var(--radius-sm); display:block; }
+.founder-plain{ display:grid; grid-template-columns: 480px 1fr; gap:64px; align-items:start; }
+.founder-plain img{ width:100%; aspect-ratio: 3/2; object-fit:cover; border-radius: var(--radius-sm); display:block; }
 .founder-plain .founder-role{ display:block; font-size:14px; font-weight:700; color:var(--color-pink-dark); margin-bottom:8px; }
 .founder-plain h3{ font-size:26px; font-weight:800; color:var(--color-black); margin:0 0 20px; }
 .founder-plain p{ font-size:14.5px; color:var(--color-text-light); line-height:1.85; margin:0 0 18px; }
