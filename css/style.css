@@ -238,7 +238,7 @@ button{ font-family: inherit; cursor:pointer; }
 
 .brand-plain{
   display:grid;
-  grid-template-columns: 480px 1fr;
+  grid-template-columns: 100px 1fr;
   gap:32px;
   align-items:start;
 }
