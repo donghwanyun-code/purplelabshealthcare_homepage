@@ -233,6 +233,80 @@ button{ font-family: inherit; cursor:pointer; }
   font-size:14px; color:var(--color-text);
 }
 
+/* ---------- Brand (plain, image-left / text-right row layout) ---------- */
+.brand-plain-grid{ display:flex; flex-direction:column; gap:72px; }
+
+.brand-plain{
+  display:grid;
+  grid-template-columns: 480px 1fr;
+  gap:32px;
+  align-items:start;
+}
+
+/* 이미지 2개를 감싸는 래퍼 */
+.brand-plain-imgs{
+  display:flex;
+  gap:12px;
+}
+
+.brand-plain-imgs img{
+  flex:1 1 0;
+  width:0;
+  aspect-ratio: 3/4; /* 필요에 따라 3/2, 1/1 등으로 조절 */
+  object-fit:cover;
+  border-radius: var(--radius-sm);
+  display:block;
+}
+
+.brand-plain .brand-role{
+  display:block;
+  font-size:14px;
+  font-weight:700;
+  color:var(--color-pink-dark);
+  margin-bottom:8px;
+}
+
+.brand-plain h3{
+  font-size:26px;
+  font-weight:800;
+  color:var(--color-black);
+  margin:0 0 20px;
+}
+
+.brand-plain p{
+  font-size:14.5px;
+  color:var(--color-text-light);
+  line-height:1.85;
+  margin:0 0 18px;
+}
+
+.brand-plain .brand-list-label{
+  font-weight:800;
+  color:var(--color-black);
+  font-size:15px;
+  display:block;
+  margin:22px 0 10px;
+}
+
+.brand-plain .brand-list{ margin:0 0 28px; }
+
+.brand-plain .btn-linkedin{
+  display:block;
+  width:100%;
+  box-sizing:border-box;
+  text-align:center;
+  background:var(--color-black);
+  color:#fff;
+  padding:16px;
+  border-radius: var(--radius-sm);
+  font-weight:700;
+  font-size:15px;
+  transition: var(--transition);
+}
+
+.brand-plain .btn-linkedin:hover{ opacity:.85; }
+
+
 /* ---------- Founders (plain, image-left / text-right row layout) ---------- */
 .founder-plain-grid{ display:flex; flex-direction:column; gap:72px; }
 .founder-plain{ display:grid; grid-template-columns: 480px 1fr; gap:32px; align-items:start; }
