@@ -281,7 +281,7 @@ button{ font-family: inherit; cursor:pointer; }
 .brand-plain-imgs img{
   flex:1 1 0;
   width:0;
-  aspect-ratio: 3/4; /* 필요에 따라 3/2, 1/1 등으로 조절 */
+  aspect-ratio: 4/3; /* 필요에 따라 3/2, 1/1 등으로 조절 */
   object-fit:cover;
   border-radius: var(--radius-sm);
   display:block;
