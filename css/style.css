@@ -342,13 +342,13 @@ button{ font-family: inherit; cursor:pointer; }
   font-size:14px; font-weight:800; letter-spacing:.08em; text-transform:uppercase;
   color:var(--color-text-light); margin:0 0 28px;
 }
-.partner-grid{ display:grid; grid-template-columns: repeat(4,1fr); gap:32px 24px; }
+.partner-grid{ display:grid; grid-template-columns: repeat(5,1fr); gap:32px 24px; }
 .partner-logo{
   display:flex; align-items:center; justify-content:center;
   height:auto; padding:0;
 }
 .partner-logo img{
-  max-width:100%; max-height:36px; object-fit:contain;
+  max-width:100%; max-height:200px; object-fit:contain;
   filter:grayscale(100%); opacity:.75; transition: var(--transition);
 }
 .partner-logo:hover img{ filter:none; opacity:1; }
