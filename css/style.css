@@ -672,7 +672,7 @@ button{ font-family: inherit; cursor:pointer; }
 
 /* contact plain (no card bg) */
 .contact-plain-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:40px; }
-.contact-plain h4{ margin:0 0 10px; font-size:16px; font-weight:800; color:var(--color-black); }
+.contact-plain h4{ margin:30 0 10px; font-size:16px; font-weight:800; color:var(--color-black); }
 .contact-plain p{ margin:0 0 12px; font-size:14px; color:var(--color-text-light); line-height:1.8; }
 .contact-plain a.email{ font-weight:700; color:var(--color-black); text-decoration:underline; }
 
