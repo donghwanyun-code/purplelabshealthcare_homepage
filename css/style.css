@@ -576,7 +576,7 @@ button{ font-family: inherit; cursor:pointer; }
   background: linear-gradient(135deg,#fbe6d3 0%, #eaab8e 55%, #c98a8c 100%);
   border-radius: var(--radius-lg);
   padding: 56px;
-  display:grid; grid-template-columns: 1.1fr 0.9fr; gap:40px; align-items:center;
+  display:grid; grid-template-columns: 2.1fr 0.9fr; gap:40px; align-items:center;
   color:#2c1f18;
 }
 .timeline-banner h2{ font-size:clamp(20px,2.6vw,26px); font-weight:800; margin:0 0 18px; }
