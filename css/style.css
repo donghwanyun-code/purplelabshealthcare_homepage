@@ -335,6 +335,9 @@ button{ font-family: inherit; cursor:pointer; }
 
 .brand-plain .btn-linkedin:hover{ opacity:.85; }
 
+
+
+
 /* 입점 매장 (MARKET) 자동 슬라이드 */
 .market-title{ font-size:26px; font-weight:800; color:var(--color-black); margin:8px 0 40px; }
 
