@@ -230,8 +230,8 @@ button{ font-family: inherit; cursor:pointer; }
 .marquee:hover .marquee-track{ animation-play-state: paused; }
 .marquee-item{
   flex-shrink:0;
-  width:360px;
-  height:280px;
+  width:320px;
+  height:260px;
   border-radius: var(--radius-md);
   overflow:hidden;
 }
