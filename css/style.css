@@ -335,6 +335,38 @@ button{ font-family: inherit; cursor:pointer; }
 
 .brand-plain .btn-linkedin:hover{ opacity:.85; }
 
+/* 입점 매장 (MARKET) 자동 슬라이드 */
+.market-title{ font-size:26px; font-weight:800; color:var(--color-black); margin:8px 0 40px; }
+
+.market-marquee{ width:100%; overflow:hidden; }
+.market-track{
+  display:flex;
+  gap:16px;
+  width:max-content;
+  animation: market-scroll 22s linear infinite;
+}
+.market-marquee:hover .market-track{ animation-play-state: paused; }
+.market-item{
+  flex-shrink:0;
+  width:286px;
+  aspect-ratio: 6 / 5;
+  border-radius: var(--radius-sm);
+  overflow:hidden;
+  background: var(--color-bg-soft);
+}
+.market-item img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+@keyframes market-scroll{
+  from{ transform: translateX(0); }
+  to{ transform: translateX(-50%); }
+}
+
+@media (max-width: 720px){
+  .market-item{ width:200px; }
+  .market-track{ gap:12px; animation-duration: 16s; }
+}
+
+
 /* 유통 파트너 로고 그리드 (company.html) */
 .partner-group{ margin-bottom:56px; }
 .partner-group:last-child{ margin-bottom:0; }
