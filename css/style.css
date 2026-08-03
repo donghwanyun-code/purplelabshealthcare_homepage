@@ -824,7 +824,7 @@ button{ font-family: inherit; cursor:pointer; }
 .map-wrap{
   position:relative;
   width:100%;
-  padding-bottom:45%; /* 16:9 비율. 지도를 더 넓적하게 하려면 40~45%, 정사각형에 가깝게 하려면 75% 등으로 조절 */
+  padding-bottom:60%; /* 16:9 비율. 지도를 더 넓적하게 하려면 40~45%, 정사각형에 가깝게 하려면 75% 등으로 조절 */
   height:0;
   border-radius: var(--radius-sm);
   overflow:hidden;
