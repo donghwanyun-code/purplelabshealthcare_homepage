@@ -582,20 +582,17 @@ button{ font-family: inherit; cursor:pointer; }
   width: 100%;
 }
 
-.home-hero .container {
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
 .home-hero-image {
-  width: 100%;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 .home-hero-image img {
   display: block;
   width: 100%;
   height: auto;
+  max-height: 656px; /* 원하는 높이로 조정, 없어도 무방 */
   object-fit: cover;
 }
 
