@@ -584,9 +584,7 @@ button{ font-family: inherit; cursor:pointer; }
 
 .home-hero .container {
   width: 100%;
-  max-width: 1600px; /* 필요한 최대 폭으로 조정 */
   margin: 0 auto;
-  padding: 0 40px;
   box-sizing: border-box;
 }
 
