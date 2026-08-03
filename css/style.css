@@ -335,7 +335,47 @@ button{ font-family: inherit; cursor:pointer; }
 
 .brand-plain .btn-linkedin:hover{ opacity:.85; }
 
+.brand-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
+.btn-brand-more {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--color-black);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-brand-more:hover {
+  opacity: 0.85;
+}
+
+.brand-plain-full {
+  width: 100%;
+}
+
+.brand-plain-full img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .brand-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
 
 /* 입점 매장 (MARKET) 자동 슬라이드 */
