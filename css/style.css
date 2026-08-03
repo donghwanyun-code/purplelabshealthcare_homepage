@@ -338,9 +338,10 @@ button{ font-family: inherit; cursor:pointer; }
 .brand-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;   /* 버튼을 텍스트 블록 맨 아래 라인에 맞춤 */
   flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 48px;
 }
 
 .btn-brand-more {
