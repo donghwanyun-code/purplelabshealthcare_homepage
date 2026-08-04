@@ -884,7 +884,7 @@ button{ font-family: inherit; cursor:pointer; }
 
 .map-wrap-kakao{
   width: 100%;
-  max-width: 1200px;   /* 원하는 최대 너비로 조절 */
+  max-width: 1100px;   /* 원하는 최대 너비로 조절 */
   margin: 0 auto;       /* 가운데 정렬 */
   display: flex;
   justify-content: center;
