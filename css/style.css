@@ -634,8 +634,8 @@ button{ font-family: inherit; cursor:pointer; }
   text-align:center;
 }
 .home-hero-text h1{
-  font-size: clamp(20px, 2.6vw, 32px);
-  font-weight: 700;
+  font-size: clamp(16px, 1.8vw, 26px);
+  font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--color-black);
   margin: 0 0 28px;
