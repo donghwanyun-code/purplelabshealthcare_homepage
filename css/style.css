@@ -884,10 +884,10 @@ button{ font-family: inherit; cursor:pointer; }
 
 .map-wrap-kakao{
   width: 100%;
-  max-width: 1200px;   /* 원하는 최대 너비로 조절 */
-  margin: 0 auto;       /* 가운데 정렬 */
-  display: flex;
-  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 540px;   /* 지도(500) + kakaomap 안내바 높이만큼만, 주소/전화 영역은 잘림 */
 }
 
 /* ---------- howwework.html 전용 플레인 리스트 ---------- */
