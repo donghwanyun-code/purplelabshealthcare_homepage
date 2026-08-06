@@ -893,9 +893,9 @@ button{ font-family: inherit; cursor:pointer; }
 /* ---------- howwework.html 전용 플레인 리스트 ---------- */
 .principle-grid{ display:grid; grid-template-columns: repeat(2,1fr); gap:0; border-top:1px solid var(--color-border); }
 .principle-item{ display:flex; gap:16px; padding:26px 18px; border-bottom:1px solid var(--color-border); }
-.principle-item .num{ font-size:14px; font-weight:800; color:var(--color-text-light); flex-shrink:0; width:28px; }
-.principle-item h3{ font-size:16px; font-weight:800; color:var(--color-black); margin:0 0 8px; }
-.principle-item p{ font-size:13.5px; color:var(--color-text-light); line-height:1.8; margin:0; }
+.principle-item .num{ font-size:16px; font-weight:400; color:var(--color-text-light); flex-shrink:0; width:28px; }
+.principle-item h3{ font-size:20px; font-weight:800; color:var(--color-black); margin:0 0 8px; }
+.principle-item p{ font-size:15px; color:var(--color-text-light); line-height:1.8; margin:0; }
 
 .plain-icon-grid{ display:grid; gap:32px; }
 .plain-icon-grid.cols-3{ grid-template-columns: repeat(3,1fr); }
