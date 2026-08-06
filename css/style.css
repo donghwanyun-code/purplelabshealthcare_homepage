@@ -231,7 +231,7 @@ button{ font-family: inherit; cursor:pointer; }
 .marquee-item{
   flex-shrink:0;
   width:320px;
-  height:260px;
+  height:320px;
   border-radius: var(--radius-md);
   overflow:hidden;
 }
