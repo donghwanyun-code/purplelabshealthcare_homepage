@@ -507,7 +507,7 @@ button{ font-family: inherit; cursor:pointer; }
 .founder-plain .btn-linkedin:hover{ opacity:.85; }
 
 .testimonial-card{ text-align:center; }
-.testimonial-card img{ width:500px;height:500px;border-radius:50%; object-fit:cover; margin:0 auto 18px; }
+.testimonial-card img{ width:320px; height:320px;border-radius:50%; object-fit:cover; margin:0 auto 18px; }
 .testimonial-card blockquote{ font-size:16px; font-weight:600; margin:0 0 12px; }
 .testimonial-card cite{ font-style:normal; color:var(--color-text-light); font-size:13.5px; }
 
