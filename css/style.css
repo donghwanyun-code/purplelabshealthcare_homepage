@@ -491,7 +491,7 @@ button{ font-family: inherit; cursor:pointer; }
 .contents-marquee:hover .contents-track{ animation-play-state: paused; }
 .contents-item{
   flex-shrink:0;
-  width:186px;
+  width:200px;
   aspect-ratio: 3 / 5.6;
   border-radius: var(--radius-sm);
   overflow:hidden;
