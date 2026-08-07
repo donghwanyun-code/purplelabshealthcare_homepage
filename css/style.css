@@ -521,7 +521,7 @@ button{ font-family: inherit; cursor:pointer; }
 .trophy-marquee:hover .contents-track{ animation-play-state: paused; }
 .trophy-item{
   flex-shrink:0;
-  width:186px;
+  width:240px;
   aspect-ratio: 4 / 6;
   border-radius: var(--radius-sm);
   overflow:hidden;
