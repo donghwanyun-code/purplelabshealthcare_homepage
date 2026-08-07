@@ -509,7 +509,35 @@ button{ font-family: inherit; cursor:pointer; }
   .contents-track{ gap:12px; animation-duration: 18s; }
 }
 
+/* trophy 자동 슬라이드 (오른쪽 → 왼쪽) */
+.trophy-title{ font-size:24px; font-weight:800; color:var(--color-black); margin:0 0 24px; }
+.trophy-marquee{ width:100%; overflow:hidden; }
+.trophy-track{
+  display:flex;
+  gap:16px;
+  width:max-content;
+  animation: contents-scroll 24s linear infinite;
+}
+.trophy-marquee:hover .contents-track{ animation-play-state: paused; }
+.trophy-item{
+  flex-shrink:0;
+  width:186px;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radius-sm);
+  overflow:hidden;
+  background: var(--color-bg-soft);
+}
+.trophy-item img{ width:100%; height:100%; object-fit:cover; display:block; }
 
+@keyframes trophy-scroll{
+  from{ transform: translateX(0); }
+  to{ transform: translateX(-50%); }
+}
+
+@media (max-width: 720px){
+  .trophy-item{ width:128px; }
+  .trophy-track{ gap:12px; animation-duration: 18s; }
+}
 
 /* ---------- Founders (plain, image-left / text-right row layout) ---------- */
 .founder-plain-grid{ display:flex; flex-direction:column; gap:72px; }
