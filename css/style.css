@@ -522,7 +522,7 @@ button{ font-family: inherit; cursor:pointer; }
 .trophy-item{
   flex-shrink:0;
   width:240px;
-  aspect-ratio: 4 / 6;
+  aspect-ratio: 3 / 4;
   border-radius: var(--radius-sm);
   overflow:hidden;
   background: var(--color-bg-soft);
