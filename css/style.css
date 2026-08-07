@@ -29,15 +29,18 @@
 
 *, *::before, *::after{ box-sizing: border-box; }
 
-html{ scroll-behavior: smooth; }
-
-body{
-  margin:0;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 img{ max-width: 100%; display:block; }
@@ -371,13 +374,19 @@ button{ font-family: inherit; cursor:pointer; }
   display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
 }
 
+/* 모바일에서는 풀블리드 해제 → 잘리지 않고 컨테이너 폭에 맞게 반응형 */
 @media (max-width: 768px) {
-  .brand-header {
-    flex-direction: column;
-    align-items: flex-start;
+  .brand-plain-full {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .brand-plain-full img {
+    width: 100%;
+    height: auto;
   }
 }
 
