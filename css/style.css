@@ -39,6 +39,8 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.6;
+  word-break: keep-all;      /* 추가: 한글 어절 단위 줄바꿈 */
+  overflow-wrap: break-word; /* 추가: 긴 영단어/URL 안전장치 */
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
